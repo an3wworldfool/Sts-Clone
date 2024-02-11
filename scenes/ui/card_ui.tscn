@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://cmniv8mnam6j2"]
 
 [ext_resource type="Theme" uid="uid://bkb0mxelwu3vj" path="res://main_theme.tres" id="1_2fd5c"]
-[ext_resource type="Script" path="res://scenes/card_ui/card_ui.gd" id="2_7fwhi"]
+[ext_resource type="Script" path="res://scenes/ui/card_ui.gd" id="2_7fwhi"]
 [ext_resource type="StyleBox" uid="uid://883ysypgxpgy" path="res://scenes/card_ui/card_base_stylebox.tres" id="3_bu6g5"]
 [ext_resource type="Script" path="res://scenes/card_ui/card_state_machine.gd" id="3_i07jl"]
 [ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="4_ctskm"]
