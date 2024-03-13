@@ -8,7 +8,7 @@ extends Panel
 
 func _set_char_stats(value: CharacterStats) -> void:
 	char_stats = value
-	
+	print(value.mana)
 	if not char_stats.stats_changed.is_connected(_on_stats_changed):
 		char_stats.stats_changed.connect(_on_stats_changed)
 	if not is_node_ready():

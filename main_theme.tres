@@ -1,9 +1,34 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bkb0mxelwu3vj"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bkb0mxelwu3vj"]
 
 [ext_resource type="StyleBox" uid="uid://883ysypgxpgy" path="res://scenes/card_ui/card_base_stylebox.tres" id="1_4lhb7"]
 [ext_resource type="FontFile" uid="uid://dskmdk146n4rq" path="res://art/pixel_rpg.ttf" id="1_6cbtq"]
+[ext_resource type="StyleBox" uid="uid://ce1owpf4akf7m" path="res://scenes/card_ui/card_hover_stylebox.tres" id="1_11cgj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jahtx"]
+bg_color = Color(0.631373, 0.34902, 0.321569, 0.796078)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.701961, 0.701961, 0.701961, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iqlb0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_awoao"]
+bg_color = Color(0.631373, 0.34902, 0.321569, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.431373, 0.4, 0.176471, 1)
 
 [resource]
 default_font = ExtResource("1_6cbtq")
 default_font_size = 6
+Button/styles/disabled = SubResource("StyleBoxFlat_jahtx")
+Button/styles/focus = SubResource("StyleBoxEmpty_iqlb0")
+Button/styles/hover = ExtResource("1_11cgj")
+Button/styles/normal = ExtResource("1_4lhb7")
+Button/styles/pressed = SubResource("StyleBoxFlat_awoao")
 Panel/styles/panel = ExtResource("1_4lhb7")
+PanelContainer/styles/panel = ExtResource("1_4lhb7")
